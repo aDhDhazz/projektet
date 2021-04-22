@@ -1,0 +1,77 @@
+/* --------- GLOBALA STILAR --------- */
+:root {
+    --purple: #845EC2;
+    --darkgrey: #4B4453;
+    --lightgray: #B0A8B9;
+    --red: #C34A36;
+    --pink: #FF8066;
+    --white: #fff;
+    --black: #000;
+    --font-logo: 'Righteous', cursive;
+    --font-headline: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font-text: serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--offwhite);
+    background: url('lgbtq-flag.png') no-repeat center center fixed; 
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+
+    font-family: var(--font-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+}
+
+/* --------- WRAPPER --------- */
+.wrapper {        
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr auto;
+
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: var(--white);
+}
+
+/* --------- HEADER OCH NAV --------- */
+header {
+    background-color: var(--red);
+    padding: 0 2rem;
+}
+
+/* --------- CONTENT --------- */
+.content {
+    padding: 1rem 2rem 0 2rem;
+}
+
+/* --------- FOOTER --------- */
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* --------- START --------- */
+
+
+/* --------- EN HELG I OSLO --------- */
+
+
+/* --------- LILLA RESAN --------- */
+
+
+/* --------- STORA RESAN --------- */
+
+
+/* --------- OM OSS --------- */
+
