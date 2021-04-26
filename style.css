@@ -12,18 +12,6 @@
     --font-text: serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-
-    background-color: var(--offwhite);
-    background: url('lgbtq-flag.png') no-repeat center center fixed; 
-    background-size: cover;
-    backdrop-filter: blur(1rem);
-
-    font-family: var(--font-text);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headline);
 }
@@ -35,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-rows: minmax(100px, auto) 1fr auto;
 
     min-height: 100vh;
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
 
     background-color: var(--white);
@@ -44,7 +32,44 @@ h1, h2, h3, h4, h5, h6 {
 /* --------- HEADER OCH NAV --------- */
 header {
     background-color: var(--red);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
     padding: 0 2rem;
+
+    display: grid;
+}
+
+header .logo {
+    display: grid;
+    justify-content: center;
+}
+
+header nav {
+    font-size: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header li {
+    padding: 0 0.5rem;
+}
+
+header ul a {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 /* --------- CONTENT --------- */
