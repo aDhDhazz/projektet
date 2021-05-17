@@ -1,15 +1,18 @@
 /* --------- GLOBALA STILAR --------- */
 :root {
-    --purple: #845EC2;
     --darkgrey: #4B4453;
-    --lightgray: #B0A8B9;
-    --red: #C34A36;
-    --pink: #FF8066;
+    --lightgrey: #B0A8B9;
+    --blue: #0E1D43;
     --white: #fff;
     --black: #000;
     --font-logo: 'Righteous', cursive;
     --font-headline: Arial, "Helvetica Neue", Helvetica, sans-serif;
     --font-text: serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,15 +34,31 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --------- HEADER OCH NAV --------- */
 header {
-    background-color: var(--red);
+    background-color: var(--blue);
 
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-
-    padding: 0 2rem;
 
     display: grid;
+}
+
+nav {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    justify-content: space-between;
+
+    background-color: var(--blue);
+    height: 50px;
+}
+
+a {
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--white);
+    
+    display: flex;
+    justify-content: center;
 }
 
 header .logo {
@@ -47,30 +66,6 @@ header .logo {
     justify-content: center;
 }
 
-header nav {
-    font-size: 30px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-header li {
-    padding: 0 0.5rem;
-}
-
-header ul a {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-}
 
 /* --------- CONTENT --------- */
 .content {
@@ -79,7 +74,7 @@ header ul a {
 
 /* --------- FOOTER --------- */
 footer {
-    background-color: var(--red);
+    background-color: var(--blue);
     color: var(--white);
     padding: 2rem;
     text-align: center;
