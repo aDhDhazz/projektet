@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {        
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(100px, auto) 1fr auto;
+    grid-template-rows: minmax(100px, auto) 50px 1fr auto;
 
     min-height: 100vh;
     max-width: auto;
@@ -45,7 +45,6 @@ header {
 nav {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 1;
     justify-content: space-between;
 
     background-color: var(--blue);
@@ -56,6 +55,8 @@ a {
     font-size: 40px;
     text-decoration: none;
     color: var(--white);
+    width: auto;
+    min-width: 220px;
     
     display: flex;
     justify-content: center;
@@ -71,6 +72,22 @@ header .logo {
 .content {
     padding: 1rem 2rem 0 2rem;
 }
+
+/*.content1 {
+    
+}
+
+/*.content2 {
+    
+}
+
+.content3 {
+    
+}
+
+.content4 {
+    
+}/*
 
 /* --------- FOOTER --------- */
 footer {
