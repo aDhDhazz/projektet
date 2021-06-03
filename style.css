@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-rows: minmax(100px, auto) 50px 1fr auto;
 
     min-height: 100vh;
-    max-width: auto;
     margin: 0 auto;
 
     background-color: var(--white);
@@ -44,7 +43,7 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     justify-content: space-between;
 
     background-color: var(--blue);
@@ -70,24 +69,33 @@ header .logo {
 
 /* --------- CONTENT --------- */
 .content {
-    padding: 1rem 2rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
-/*.content1 {
-    
+.content > h1 {
+    display: flex;
+    justify-content: center;
 }
 
-/*.content2 {
-    
+.content1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+}
+
+.content2 {
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .content3 {
+    display: grid;
     
 }
 
-.content4 {
-    
-}/*
+li {
+    font-size: 25px;
+}
 
 /* --------- FOOTER --------- */
 footer {
